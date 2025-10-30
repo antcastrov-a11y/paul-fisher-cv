@@ -1,0 +1,202 @@
+como pongo este codigo <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paul Fisher - Hoja de Vida</title>
+  <style>
+    /* ======= ESTILOS GENERALES ======= */
+    body {
+      margin: 0;  
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f3f6fa;
+      color: #2b2b2b;
+    }
+
+    .cv-container {
+      display: flex;
+      flex-direction: row;
+      max-width: 1000px;
+      margin: 50px auto;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* ======= COLUMNA IZQUIERDA ======= */
+    .left-column {
+      background-color: #e2eefc;
+      width: 35%;
+      padding: 30px;
+      box-sizing: border-box;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .name {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 5px 0;
+      color: #1c3557;
+    }
+
+    .age {
+      color: #333;
+      font-size: 15px;
+      margin-bottom: 25px;
+    }
+
+    .section-title {
+      background-color: #a7c6ee;
+      color: #1c3557;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    /* ======= COLUMNA DERECHA ======= */
+    .right-column {
+      width: 65%;
+      padding: 40px 30px;
+      box-sizing: border-box;
+    }
+
+    .about {
+      background-color: #e2eefc;
+      padding: 15px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .section {
+      margin-bottom: 25px;
+    }
+
+    .section h2 {
+      background-color: #a7c6ee;
+      color: #1c3557;
+      font-size: 17px;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      margin: 8px 0;
+      line-height: 1.6;
+    }
+
+    .contact p {
+      margin: 6px 0;
+      font-size: 15px;
+    }
+
+    .contact a {
+      color: #1c3557;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* ======= RESPONSIVE ======= */
+    @media (max-width: 800px) {
+      .cv-container {
+        flex-direction: column;
+      }
+
+      .left-column, .right-column {
+        width: 100%;
+      }
+
+      .left-column {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cv-container">
+    <!-- Columna Izquierda -->
+    <div class="left-column">
+      <img src="profile_image.jpg" alt="Foto de Paul Fisher" class="profile-pic">
+      <div class="name">Paul Fisher</div>
+      <div class="age">28 años</div>
+
+      <div class="section-title">Experiencia</div>
+      <p><strong>Tangerine - FL</strong><br>Tangerine High School<br>Portero</p>
+      <ul>
+        <li>Portero desde la escuela hasta la universidad.</li>
+        <li>Desarrollé trabajo en equipo, disciplina y liderazgo.</li>
+      </ul>
+
+      <div class="section-title">Idiomas</div>
+      <ul>
+        <li>Inglés</li>
+        <li>Español Básico</li>
+        <li>Francés</li>
+      </ul>
+
+      <div class="section-title">Datos curiosos</div>
+      <ul>
+        <li>Sobreviví a un desastre por hundimiento en Lake Windsor Middle School.</li>
+        <li>Exposé la verdad sobre las acciones crueles de mi hermano Erik.</li>
+        <li>A pesar de mi discapacidad visual, fui uno de los mejores porteros de Tangerine.</li>
+      </ul>
+    </div>
+
+    <!-- Columna Derecha -->
+    <div class="right-column">
+      <div class="about">
+        <p>Estudié marketing deportivo en la Universidad Tangerine, tengo una maestría en preparación física y he sido portero desde la escuela.</p>
+      </div>
+
+      <div class="section">
+        <h2>Educación</h2>
+        <ul>
+          <li>Lake Windsor Middle School</li>
+          <li>Tangerine Middle School</li>
+          <li>St. Anthony’s</li>
+          <li>Universidad Tangerine</li>
+        </ul>
+      </div>
+
+      <div class="section contact">
+        <h2>Contacto</h2>
+        <p>📧 <a href="mailto:Paulfisher11@gmail.com">Paulfisher11@gmail.com</a></p>
+        <p>📞 <a href="tel:+2234567654">223 456 7654</a></p>
+        <p>📍 13th Street, 44th Avenue, Wind Place Complex, Unit 1</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
